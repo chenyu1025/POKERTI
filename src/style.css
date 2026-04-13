@@ -1,15 +1,15 @@
 /* ========== CSS Variables ========== */
 :root {
-  --bg: #fdf6f9;
-  --card-bg: #ffffff;
-  --text: #3d2a33;
-  --text-secondary: #8c7582;
-  --accent: #d86c8f;
-  --accent-light: #fce8f0;
-  --accent-hover: #c45778;
-  --border: #f0dfe6;
+  --bg: #111814;
+  --card-bg: #1b2621;
+  --text: #ecf2ef;
+  --text-secondary: #8b9c94;
+  --accent: #d32f2f;
+  --accent-light: #3d1c1d;
+  --accent-hover: #e53935;
+  --border: #2a3a32;
   --radius: 16px;
-  --shadow: 0 8px 30px rgba(216, 108, 143, 0.1);
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
   --font: system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
     'Microsoft YaHei', sans-serif;
   --max-width: 640px;
@@ -320,18 +320,18 @@ body {
 }
 
 .level-low {
-  background: #f4f6fa;
-  color: #7b968a;
+  background: #25332c;
+  color: #8b9c94;
 }
 
 .level-mid {
-  background: #fce8f0;
-  color: #d86c8f;
+  background: #3d321c;
+  color: #ffca28;
 }
 
 .level-high {
-  background: #f8dce5;
-  color: #c45778;
+  background: #3d1c1d;
+  color: #d32f2f;
 }
 
 .dim-desc {

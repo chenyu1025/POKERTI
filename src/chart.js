@@ -35,9 +35,9 @@ export function drawRadar(canvas, userLevels, dimOrder, dimDefs) {
     const r = (level / 3) * maxR
     ctx.beginPath()
     ctx.arc(cx, cy, r, 0, Math.PI * 2)
-    ctx.fillStyle = level === 3 ? 'rgba(216, 108, 143, 0.06)' : level === 2 ? 'rgba(216, 108, 143, 0.04)' : 'rgba(216, 108, 143, 0.02)'
+    ctx.fillStyle = level === 3 ? 'rgba(211, 47, 47, 0.08)' : level === 2 ? 'rgba(211, 47, 47, 0.05)' : 'rgba(211, 47, 47, 0.02)'
     ctx.fill()
-    ctx.strokeStyle = 'rgba(216, 108, 143, 0.12)'
+    ctx.strokeStyle = 'rgba(211, 47, 47, 0.15)'
     ctx.lineWidth = 0.5
     ctx.stroke()
   }
@@ -56,7 +56,7 @@ export function drawRadar(canvas, userLevels, dimOrder, dimDefs) {
     ctx.beginPath()
     ctx.moveTo(cx, cy)
     ctx.lineTo(x, y)
-    ctx.strokeStyle = 'rgba(216, 108, 143, 0.1)'
+    ctx.strokeStyle = 'rgba(211, 47, 47, 0.1)'
     ctx.lineWidth = 0.5
     ctx.stroke()
 
@@ -66,7 +66,7 @@ export function drawRadar(canvas, userLevels, dimOrder, dimDefs) {
     const ly = cy + Math.sin(angle) * labelR
     const dim = dimOrder[i]
     const label = dimDefs[dim]?.name?.replace(/^[A-Za-z0-9]+\s*/, '') || dim
-    ctx.fillStyle = '#8c7582'
+    ctx.fillStyle = '#8b9c94'
     ctx.fillText(label, lx, ly)
   }
 
@@ -83,9 +83,9 @@ export function drawRadar(canvas, userLevels, dimOrder, dimDefs) {
     else ctx.lineTo(x, y)
   }
   ctx.closePath()
-  ctx.fillStyle = 'rgba(216, 108, 143, 0.2)'
+  ctx.fillStyle = 'rgba(211, 47, 47, 0.25)'
   ctx.fill()
-  ctx.strokeStyle = 'rgba(216, 108, 143, 0.6)'
+  ctx.strokeStyle = 'rgba(211, 47, 47, 0.8)'
   ctx.lineWidth = 2
   ctx.stroke()
 
@@ -97,7 +97,7 @@ export function drawRadar(canvas, userLevels, dimOrder, dimDefs) {
     const y = cy + Math.sin(angle) * r
     ctx.beginPath()
     ctx.arc(x, y, 3, 0, Math.PI * 2)
-    ctx.fillStyle = '#d86c8f'
+    ctx.fillStyle = '#ffca28'
     ctx.fill()
   }
 }

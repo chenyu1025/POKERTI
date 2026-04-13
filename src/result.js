@@ -90,11 +90,13 @@ export function renderResult(result, userLevels, dimOrder, dimDefs, config) {
 
   // 复制 AI Agent 命令
   const btnAgent = document.getElementById('btn-agent')
-  btnAgent.onclick = () => {
-    const cmd = `git clone https://github.com/chenyu1025/TRNTI.git && cd TRNTI && npm install && npm run dev`
-    navigator.clipboard.writeText(cmd).then(() => {
-      btnAgent.textContent = '已复制!'
-      setTimeout(() => { btnAgent.textContent = '复制一键部署命令' }, 2000)
-    })
+  if (btnAgent) {
+    btnAgent.onclick = () => {
+      const cmd = `git clone https://github.com/chenyu1025/POKERTI.git && cd POKERTI && npm install && npm run dev`
+      navigator.clipboard.writeText(cmd).then(() => {
+        btnAgent.textContent = '已复制!'
+        setTimeout(() => { btnAgent.textContent = '复制一键部署命令' }, 2000)
+      })
+    }
   }
 }

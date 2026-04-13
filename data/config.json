@@ -1,18 +1,9 @@
 {
   "scoring": {
     "levelThresholds": {
-      "L": [
-        2,
-        3
-      ],
-      "M": [
-        4,
-        4
-      ],
-      "H": [
-        5,
-        6
-      ]
+      "L": [2, 3],
+      "M": [4, 4],
+      "H": [5, 6]
     },
     "levelNumeric": {
       "L": 1,
@@ -23,11 +14,11 @@
     "fallbackThreshold": 60
   },
   "display": {
-    "title": "TRN 同人女测试",
-    "subtitle": "MBTI算什么？来测测你到底是哪种同人女。",
-    "author": "metadata (Forked from SBTI)",
-    "funNote": "本测试仅供娱乐，别拿它当真。如有雷同，纯属你在发疯。",
-    "funNoteSpecial": "本测试仅供娱乐。隐藏人格纯属作者发癫，请勿当真。"
+    "title": "POKERTI 德扑人格测试",
+    "subtitle": "MBTI算什么？来测测你到底是哪种德州扑克玩家。",
+    "author": "POKERTI",
+    "funNote": "本测试仅供娱乐，别拿它当真。如果在牌桌上输光了，请不要找本测试索赔。",
+    "funNoteSpecial": "本测试仅供娱乐。隐藏人格纯属作者发癫，请勿当真，珍爱生命，远离赌博。"
   },
   "drinkGate": {
     "questionId": "drink_gate_q1",
