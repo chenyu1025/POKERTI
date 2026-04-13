@@ -85,8 +85,8 @@ export function determineResult(userLevels, dimOrder, standardTypes, specialType
     ...matchType(userLevels, dimOrder, type.pattern),
   }))
 
-  // 排序：精准命中降序 → 距离升序 → 相似度降序
-  rankings.sort((a, b) => b.exact - a.exact || a.distance - b.distance || b.similarity - a.similarity)
+  // 排序：距离升序 → 精准命中降序 → 相似度降序
+  rankings.sort((a, b) => a.distance - b.distance || b.exact - a.exact || b.similarity - a.similarity)
 
   const best = rankings[0]
   const drunk = specialTypes.find((t) => t.code === 'PSYCHO')
